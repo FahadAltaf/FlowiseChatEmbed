@@ -466,7 +466,7 @@ export const Bot = (props: BotProps & { class?: string }) => {
               'flex-direction': 'row',
               'align-items': 'center',
               height: '50px',
-              position: props.isFullPage ? 'fixed' : 'absolute',
+              position:  'absolute',
               top: 0,
               left: 0,
               width: '100%',
@@ -521,7 +521,7 @@ export const Bot = (props: BotProps & { class?: string }) => {
             </div>
           </Show>
         </Show>
-        <Badge badgeBackgroundColor={props.badgeBackgroundColor} poweredByTextColor={props.poweredByTextColor} botContainer={botContainer} />
+        
         <BottomSpacer ref={bottomSpacer} />
       </div>
       {sourcePopupOpen() && <Popup isOpen={sourcePopupOpen()} value={sourcePopupSrc()} onClose={() => setSourcePopupOpen(false)} />}
